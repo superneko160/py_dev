@@ -15,4 +15,5 @@ def get_address(data):
 
 if __name__ == '__main__':
     args = sys.argv
-    print(get_address(get_zipcloud(args[1])))
+    if len(args) > 1:
+        print(get_address(get_zipcloud(args[1])))
